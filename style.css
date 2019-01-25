@@ -1,0 +1,94 @@
+body {
+    background: #262b35;
+    color: #7891b2;
+}
+.topbar {
+    margin-top: 20px;
+    position: relative;
+}
+
+.topbar::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #d3d3d380;
+    z-index: -1;
+}
+
+.topbar .img-wrap {
+    display: inline-block;
+    padding: 30px;
+    border-radius: 50%;
+    background: #1b1e27;
+    border-left: 10px solid #262b35;
+    border-right: 10px solid #262b35;
+}
+
+.topbar .img-wrap img {
+    width: 70px;
+}
+
+main .container {
+    padding-left: 50px;
+}
+
+.navbar {
+    width: calc(100% - 30px);
+    margin: auto;
+    padding: 10px 0 0;
+    -webkit-box-shadow: 0px 8px 3px -3px rgba(27,30,39,1);
+    -moz-box-shadow: 0px 8px 3px -3px rgba(27,30,39,1);
+    box-shadow: 0px 8px 3px -3px rgba(27,30,39,1);
+}
+
+.navbar ul li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navbar ul li.active {
+    background-color: #333749;
+}
+
+.navbar ul li.active .nav-link {
+    color: #cdd2e1;
+}
+
+.codesnippet {
+    padding: 50px 0;
+}
+
+.codesnippet a {
+    color: #7891b2;
+}
+
+.codesnippet .caret {
+    height: 48px;
+    border-right: 5px solid #cdd2e1;
+    animation: blink-caret .75s step-end infinite;
+}
+
+.codesnippet h1 .indent1 {
+    border-left: 1px solid #d3d3d380;
+    padding-left: 80px;
+}
+
+.codesnippet h1 .desc {
+    font-size: 1.8rem;
+    padding-bottom: 10px;
+}
+
+.codesnippet .desc-wrap {
+    padding-left: 80px;
+    border-left: 1px solid #d3d3d380;
+    margin: 0;
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
