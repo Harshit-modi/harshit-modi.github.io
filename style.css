@@ -92,3 +92,17 @@ main .container {
         border-color: transparent;
     }
 }
+
+@media (max-width: 767px) {
+    :root {
+        font-size: 62.5%;
+    }
+    
+    .codesnippet h1 .indent1 {
+        padding-left: 40px;
+    }
+
+    .codesnippet .desc-wrap {
+        padding-left: 40px;
+    }
+}
